@@ -26,13 +26,6 @@ function of ![](http://latex.codecogs.com/gif.latex?%5Calpha) by minimizing the 
 ![](http://latex.codecogs.com/gif.latex?D_%7BKL%7D%28P_%7B%5Calpha%7D%20%5Cparallel%20q_%7B%5Cbeta%7D%29%20%3D%20%5Clog%5CGamma%28%5Calpha_%7B0%7D%29%20-%20%5Csum_K%20%5Clog%5CGamma%28%5Calpha_%7Bk%7D%29%20&plus;%20%5Csum_K%20%5Calpha_%7Bk%7D%20%5Cpsi%28%5Calpha_%7Bk%7D%29%20-%20%5Cfrac%7B1%7D%7BK%7D%5Cleft%5B%5Cpsi%28%5Calpha_%7Bk%7D%29%20-%20%5Cpsi%28%5Calpha_%7B0%7D%29%20%5Cright%5D)
 
 ## Datasets
-Our dataset consists of the 141794 News content between the years of 2016 and July 2017 from famous publications include 
-the New York Times, Breitbart, CNN, Business Insider, the Atlantic, Fox News, Talking Points Memo, Buzzfeed News, 
-National Review, New York Post, the Guardian, NPR, Reuters, Vox, and the Washington Post. The data was scraped using 
-BeautifulSoup and segmented into nine sections (Id, Title, Publication, Author, Date, Year, Month, URL, Content) 
-provided by [Andrew Thompson and shared at Kaggle](https://www.kaggle.com/snapcrack/all-the-news/home). 
-The figure shows the abundance of news concerning the publisher.
-
 Our dataset consists of the 141794 News content between the years of 2016 and July 2017 from famous publications include the New York Times, Breitbart, CNN, Business Insider, the Atlantic, Fox News, Talking Points Memo, Buzzfeed News, National Review, New York Post, the Guardian, NPR, Reuters, Vox, and the Washington Post. The data was scraped using BeautifulSoup and segmented into nine sections (Id, Title, Publication, Author, Date, Year, Month, URL, Content) provided by [Andrew Thompson and shared at Kaggle](https://www.kaggle.com/snapcrack/all-the-news/home). Figure A shows the abundance of news concerning the publisher.
 So the initial analysis of the data has revealed that the data has duplicate records both in the rows and in the publication's column. Also, texts in this corpus were not Unicode. Because the content columns have a high- level of information along with needed for higher computations, we decided to extract the excerpts from them and use them as inputs instead of examining the entire news content. These inputs were also shorter in some records than the output length. After solving all the above issues with the help of preprocessing techniques, the final abundance of news concerning the publisher shows in Figure B.
 ![alt text][dataset]
